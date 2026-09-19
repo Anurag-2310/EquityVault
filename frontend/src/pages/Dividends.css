@@ -1,0 +1,417 @@
+.dividends-page {
+  padding: 32px;
+  color: #f5f7fb;
+}
+
+/* HEADER */
+
+.dividends-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 24px;
+}
+
+.dividends-header h1 {
+  margin: 8px 0 7px;
+  font-size: 32px;
+  letter-spacing: -0.8px;
+}
+
+.dividends-header p {
+  margin: 0;
+  color: #7d879b;
+  font-size: 13px;
+}
+
+.dividend-source {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  border: 1px solid rgba(255,255,255,0.07);
+  border-radius: 10px;
+  background: rgba(255,255,255,0.025);
+  color: #a8b1c2;
+  font-size: 11px;
+}
+
+.dividend-source span {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #00d084;
+  box-shadow: 0 0 10px rgba(0,208,132,0.7);
+}
+
+/* SUMMARY */
+
+.dividend-summary {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin-bottom: 18px;
+}
+
+.dividend-summary-card {
+  position: relative;
+  min-height: 135px;
+  padding: 18px;
+  border: 1px solid rgba(255,255,255,0.07);
+  border-radius: 14px;
+  background: rgba(255,255,255,0.02);
+}
+
+.summary-icon {
+  position: absolute;
+  top: 17px;
+  right: 17px;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9px;
+  background: rgba(0,208,132,0.08);
+  color: #00d084;
+}
+
+.dividend-summary-card > span {
+  display: block;
+  color: #697387;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.dividend-summary-card > strong {
+  display: block;
+  margin-top: 16px;
+  color: #f4f6f9;
+  font-size: 25px;
+}
+
+.dividend-summary-card small {
+  display: block;
+  margin-top: 5px;
+  color: #626c80;
+  font-size: 10px;
+}
+
+.date-value {
+  font-size: 19px !important;
+}
+
+/* SEARCH */
+
+.dividend-toolbar {
+  margin-bottom: 18px;
+}
+
+.dividend-search {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 620px;
+  height: 46px;
+  gap: 10px;
+  padding: 0 8px 0 14px;
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 11px;
+  background: rgba(255,255,255,0.025);
+}
+
+.dividend-search svg {
+  color: #697387;
+}
+
+.dividend-search input {
+  flex: 1;
+  min-width: 0;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #f5f7fb;
+  font-size: 13px;
+}
+
+.dividend-search input::placeholder {
+  color: #626b7d;
+}
+
+.dividend-search button {
+  height: 32px;
+  padding: 0 14px;
+  border: none;
+  border-radius: 7px;
+  background: #00d084;
+  color: #04130d;
+  font-size: 11px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* FEED */
+
+.dividend-feed {
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,0.07);
+  border-radius: 16px;
+  background: rgba(255,255,255,0.018);
+}
+
+.dividend-feed-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 22px;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+.dividend-feed-header > div > span {
+  color: #00d084;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+.dividend-feed-header h2 {
+  margin: 6px 0 0;
+  font-size: 18px;
+}
+
+.dividend-feed-header > span {
+  color: #697387;
+  font-size: 11px;
+}
+
+/* ROW */
+
+.dividend-row {
+  display: grid;
+  grid-template-columns:
+    minmax(180px, 1.15fr)
+    minmax(250px, 1.8fr)
+    100px
+    120px
+    125px
+    70px;
+
+  align-items: center;
+  gap: 16px;
+  min-height: 82px;
+  padding: 13px 20px;
+  border-bottom: 1px solid rgba(255,255,255,0.055);
+  transition: background 0.15s ease;
+}
+
+.dividend-row:last-child {
+  border-bottom: none;
+}
+
+.dividend-row:hover {
+  background: rgba(255,255,255,0.025);
+}
+
+/* COMPANY */
+
+.dividend-company {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.dividend-logo {
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border-radius: 9px;
+  background: rgba(0,208,132,0.08);
+  color: #00d084;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.dividend-company strong {
+  display: block;
+  font-size: 12px;
+}
+
+.dividend-company span {
+  display: block;
+  max-width: 160px;
+  margin-top: 3px;
+  overflow: hidden;
+  color: #697387;
+  font-size: 9px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* EVENT */
+
+.dividend-event strong {
+  display: block;
+  color: #e8ebf1;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.dividend-event span {
+  display: inline-block;
+  margin-top: 5px;
+  padding: 3px 7px;
+  border-radius: 5px;
+  background: rgba(0,208,132,0.07);
+  color: #00b977;
+  font-size: 8px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* AMOUNT */
+
+.dividend-amount small,
+.dividend-date small {
+  display: block;
+  margin-bottom: 5px;
+  color: #626c80;
+  font-size: 8px;
+  letter-spacing: 0.8px;
+}
+
+.dividend-amount strong {
+  color: #f4f6f9;
+  font-size: 13px;
+}
+
+/* DATES */
+
+.dividend-date strong {
+  color: #9da6b7;
+  font-size: 11px;
+  white-space: nowrap;
+}
+
+/* SOURCE */
+
+.dividend-source-cell {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: #00d084;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+/* EMPTY */
+
+.dividend-empty {
+  min-height: 260px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #697387;
+  text-align: center;
+}
+
+.dividend-empty svg {
+  margin-bottom: 12px;
+}
+
+.dividend-empty h3 {
+  margin: 0 0 6px;
+  color: #dce1e9;
+  font-size: 14px;
+}
+
+.dividend-empty p {
+  margin: 0;
+  font-size: 11px;
+}
+
+.dividend-error {
+  margin-bottom: 15px;
+  padding: 12px 15px;
+  border: 1px solid rgba(255,80,80,0.18);
+  border-radius: 9px;
+  background: rgba(255,80,80,0.05);
+  color: #ff9292;
+  font-size: 12px;
+}
+
+/* TRUST */
+
+.dividend-trust {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  margin-top: 14px;
+  padding: 12px 15px;
+  border: 1px solid rgba(255,255,255,0.05);
+  border-radius: 9px;
+  color: #687286;
+  font-size: 10px;
+}
+
+.dividend-trust > div {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.trust-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #00d084;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1050px) {
+  .dividend-row {
+    grid-template-columns:
+      160px
+      minmax(220px, 1fr)
+      80px
+      100px
+      110px
+      60px;
+  }
+}
+
+@media (max-width: 800px) {
+  .dividends-page {
+    padding: 20px;
+  }
+
+  .dividends-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .dividend-summary {
+    grid-template-columns: 1fr;
+  }
+
+  .dividend-row {
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+
+  .dividend-event {
+    grid-column: 1 / -1;
+  }
+
+  .dividend-trust {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}

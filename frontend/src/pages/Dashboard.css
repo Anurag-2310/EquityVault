@@ -1,0 +1,175 @@
+.dashboard-dividend-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.dashboard-dividend-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 13px 4px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.dashboard-dividend-item:last-child {
+  border-bottom: none;
+}
+
+.dashboard-dividend-item > div:first-child {
+  min-width: 0;
+  flex: 1;
+}
+
+.dashboard-dividend-item > div:first-child strong {
+  display: block;
+  margin-bottom: 5px;
+  color: #f3f5f8;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.dashboard-dividend-item > div:first-child span {
+  display: block;
+  color: #8992a5;
+  font-size: 11px;
+  line-height: 1.45;
+  white-space: normal;
+}
+
+.dashboard-dividend-right {
+  flex: 0 0 105px;
+  text-align: right;
+}
+
+.dashboard-dividend-right strong {
+  display: block;
+  color: #f3f5f8;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.dashboard-dividend-right span {
+  display: block;
+  color: #737d91;
+  font-size: 11px;
+  white-space: nowrap;
+}
+
+@media (max-width: 700px) {
+  .dashboard-dividend-item {
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .dashboard-dividend-right {
+    flex-basis: 85px;
+  }
+}
+/* ================================
+   DASHBOARD DIVIDEND LIST
+================================ */
+
+.dashboard-dividend-list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.dashboard-dividend-item {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 110px;
+  align-items: center;
+  column-gap: 24px;
+  padding: 15px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.dashboard-dividend-item:last-child {
+  border-bottom: none;
+}
+
+/* LEFT SIDE */
+.dashboard-dividend-item > div:first-child {
+  min-width: 0;
+}
+
+.dashboard-dividend-item > div:first-child strong {
+  display: block;
+  margin: 0 0 5px;
+  color: #f5f7fb;
+  font-size: 13px;
+  line-height: 1.3;
+  font-weight: 700;
+}
+
+.dashboard-dividend-item > div:first-child span {
+  display: block;
+  color: #7f899d;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+/* RIGHT SIDE */
+.dashboard-dividend-right {
+  width: 110px;
+  text-align: right;
+}
+
+.dashboard-dividend-right strong {
+  display: block;
+  margin: 0 0 5px;
+  color: #f5f7fb;
+  font-size: 14px;
+  line-height: 1.3;
+  font-weight: 700;
+}
+
+.dashboard-dividend-right span {
+  display: block;
+  color: #737d91;
+  font-size: 11px;
+  line-height: 1.3;
+  white-space: nowrap;
+}
+
+/* MOBILE */
+@media (max-width: 700px) {
+  .dashboard-dividend-item {
+    grid-template-columns: 1fr;
+    row-gap: 8px;
+  }
+
+  .dashboard-dividend-right {
+    width: auto;
+    text-align: left;
+  }
+}
+/* =====================================
+   PORTFOLIO DASHBOARD METRIC
+===================================== */
+
+.portfolio-dashboard-metric {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  width: 260px;
+  margin: 14px auto 12px;
+  padding: 11px 14px;
+  border: 1px solid rgba(0, 208, 132, 0.14);
+  border-radius: 9px;
+  background: rgba(0, 208, 132, 0.045);
+}
+
+.portfolio-dashboard-metric span {
+  color: #7d879b;
+  font-size: 10px;
+}
+
+.portfolio-dashboard-metric strong {
+  color: #00d084;
+  font-size: 15px;
+}
